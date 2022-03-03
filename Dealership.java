@@ -48,7 +48,9 @@ public class Dealership{
                         System.out.println("Sorry, that was a invalid choice");
                 }
             break;
-            case "b":System.out.println("You chose 'b' "); break;
+            case "b":
+                System.out.println("What is your car valued at"); 
+                break;
             default:
             System.out.println("Sorry, that was a invalid choice");
 
