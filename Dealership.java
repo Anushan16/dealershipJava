@@ -49,8 +49,18 @@ public class Dealership{
                 }
             break;
             case "b":
-                System.out.println("What is your car valued at"); 
-                break;
+                System.out.println("\nWhat is your car valued at?");
+                int carValue  = scan.nextInt(); 
+            
+                System.out.println("\nHow much do you want for a car?");
+                int sellValue  = scan.nextInt(); 
+
+                if (sellValue < carValue && sellValue < 30000){
+                    System.out.println("Sure, we'll buy your vehicle...");
+                } else {
+                    System.out.println("Sorry, we won't be able to by your vehicle..");
+                }
+            break;
             default:
             System.out.println("Sorry, that was a invalid choice");
 
